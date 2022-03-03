@@ -1,4 +1,4 @@
-let id = $("input[name*='Perfume_id']")
+let id = $("input[name*='perfume_id']")
 id.attr("readonly","readonly");
 
 

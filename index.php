@@ -82,11 +82,6 @@ require_once("php/operation.php");
                            while ($row = mysqli_fetch_assoc($result)){ ?>
 
                                <tr>
-                                   <!-- <td data-id="<?php echo $row['id']; ?>"><?php echo $row['id']; ?></td>
-                                   <td data-id="<?php echo $row['id']; ?>"><?php echo $row['Perfume_name']; ?></td>
-                                   <td data-id="<?php echo $row['id']; ?>"><?php echo $row['Perfume_type']; ?></td>
-                                   <td data-id="<?php echo $row['id']; ?>"><?php echo  $row['Perfume_Price']; ?></td>
-                                   <td ><i class="fas fa-edit btnedit" data-id="<?php echo $row['id']; ?>"></i></td> -->
 
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo $row['id']; ?></td>
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo $row['Perfume_name']; ?></td>
@@ -117,6 +112,6 @@ require_once("php/operation.php");
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script src="../CRUD/php/mian.js"></script>
+<script src="php/mian.js"></script>
 </body>
 </html>
