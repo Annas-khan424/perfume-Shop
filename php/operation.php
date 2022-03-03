@@ -76,7 +76,7 @@ function getData(){
 
 // update dat
 function UpdateData(){
-    $Perfumeid = textboxValue("Perfume_id");
+    $Perfumeid = textboxValue("perfume_id");
     $Perfumename = textboxValue("Perfume_name");
     $PerfumeType = textboxValue("Perfume_type");
     $Perfumeprice = textboxValue("Perfume_price");
@@ -101,7 +101,7 @@ function UpdateData(){
 
 
 function deleteRecord(){
-    $Perfumeid = (int)textboxValue("Perfume_id");
+    $Perfumeid = (int)textboxValue("perfume_id");
 
     $sql = "DELETE FROM Perfumes WHERE id=$Perfumeid";
 
