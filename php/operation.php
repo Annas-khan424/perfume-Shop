@@ -83,7 +83,7 @@ function UpdateData(){
 
     if($Perfumename && $PerfumeType && $Perfumeprice){
         $sql = "
-                    UPDATE perfumes SET Perfume_name='$Perfumename', Perfume_type = '$PerfumeType', Perfume_price = '$Perfumeprice' WHERE id='$Perfumeid';                    
+                    UPDATE Perfumes SET Perfume_name='$Perfumename', Perfume_type = '$PerfumeType', Perfume_price = '$Perfumeprice' WHERE id='$Perfumeid';                    
         ";
 
         if(mysqli_query($GLOBALS['con'], $sql)){
@@ -103,7 +103,7 @@ function UpdateData(){
 function deleteRecord(){
     $Perfumeid = (int)textboxValue("Perfume_id");
 
-    $sql = "DELETE FROM perfumes WHERE id=$Perfumeid";
+    $sql = "DELETE FROM Perfumes WHERE id=$Perfumeid";
 
     if(mysqli_query($GLOBALS['con'], $sql)){
         TextNode("success","Record Deleted Successfully...!");
