@@ -26,13 +26,18 @@ function Createdb(){
             Perfume_price FLOAT 
         );
 ";
-if(mysqli_query($con, $sql)){
+if(mysqli_query($con, $sql))
+{
     return $con;
-}else{
-    echo "Cannot Create table...!";
 }
+    else
+    {
+         echo "Cannot Create table...!";
+    }
 
-}else{
-echo "Error while creating database ". mysqli_error($con);
 }
+else
+    {
+        echo "Error while creating database ". mysqli_error($con);
+    }
 }

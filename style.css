@@ -9,7 +9,7 @@
 }
 
 table.btnedit{
-    color: rgb(117, 117, 230);
+    color: rgb(89, 89, 189);
     cursor:pointer;
 }
 
@@ -19,6 +19,6 @@ table.btnedit{
 }
 
 .error{
-    background-color: tomato;
+    background-color: rgb(231, 62, 33);
     padding: 1em;
 }

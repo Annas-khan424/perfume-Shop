@@ -67,8 +67,6 @@ require_once("php/operation.php");
                         <th>Perfume Type</th>
                         <th>Price</th>
                         <th>Edit</th>
-                   <!-- <th>images</th> -->
-
                     </tr>
                 </thead>
                 <tbody id="tbody">
@@ -82,14 +80,12 @@ require_once("php/operation.php");
                            while ($row = mysqli_fetch_assoc($result)){ ?>
 
                                <tr>
-
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo $row['id']; ?></td>
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo $row['Perfume_name']; ?></td>
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo $row['Perfume_type']; ?></td>
                                    <td data-id="<?php echo $row['id']; ?>"><?php echo '€' . $row['Perfume_price']; ?></td>
                                    <td ><i class="fas fa-edit btnedit" data-id="<?php echo $row['id']; ?>"></i></td>
-                               </tr>
-                               
+                               </tr>        
                    <?php
                            }
                         }
